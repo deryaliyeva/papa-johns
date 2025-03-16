@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="papa.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />    
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/swipper.css">
+    <title>Papa Johns</title>
+</head>
+<body>
+    <header class="py-5">
+        <div class="container flex justify-between items-center h-16 mb-5 py-5 mx-auto">
+            <a class="flex items-center p-2" rel="noopener noreferrer" href="#" aria-label="Back to homepage">
+                <img class="max-w-[200px] max-md:max-w-[150px] max-sm:max-w-[110px]" src="img/pj_logo.png" alt="papa_logo">
+            </a>
+
+            <ul class="items-stretch hidden space-x-3 lg:flex">
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex font-bold text-[22px] items-center px-4">Restoranlar</a>
+                </li>
+                <li class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex font-bold text-[22px] items-center px-4">PapaBonus</a>
+                </li>
+            </ul>
+            <div class="items-center flex-shrink-0 hidden lg:flex">
+                <div class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex font-bold text-[20px] items-center px-4">
+                        <img class="max-w-[29px] mx-[2px]" src="img/flag.webp" alt="flag" />
+                        Azərbaycanca</a>
+                </div>
+                <div class="flex">
+                    <a rel="noopener noreferrer" href="#" class="flex font-bold text-[20px] items-center px-4">Giriş /Qeydiyyat</a>
+                </div>
+
+                <button class="self-center py-3 rounded relative">
+                    <div>
+                        <span class="rounded-full absolute z-10 top-0 right-0 bg-red-700 text-white text-[10px] px-[6px] py-[1px]">0</span>
+                        <i class="fa-solid text-[25px] fa-basket-shopping"></i>
+                    </div>
+                    <span class="text-xs font-[700]">0 ₼</span>
+                </button>
+            </div>
+
+            <div class="p-4 lg:hidden flex items-center justify-center gap-5">
+
+                <div class="self-center py-3 rounded relative">
+                    <div>
+                        <img class="max-w-[29px] mx-[2px]" src="img/flag.webp" alt="flag">
+                    </div>
+                    <span class="text-xs font-[700] px-2">Az</span>
+                </div>
+
+                <div class="self-center py-3 rounded relative">
+                    <div>
+                        <i class="fa-solid text-[25px] fa-user"></i>
+                    </div>
+                    <span class="text-xs font-[700]">Giriş</span>
+                </div>
+
+                <div class="self-center py-3 rounded relative">
+                    <div>
+                        <span class="rounded-full absolute z-10 top-0 right-0 bg-red-700 text-white text-[10px] px-[6px] py-[1px]">0</span>
+                        <i class="fa-solid text-[25px] fa-basket-shopping"></i>
+                    </div>
+                    <span class="text-xs font-[700]">0 ₼</span>
+                </div>
+
+            </div>
+        </div>
+    <div class="bg-red-700">
+        <div class="flex justify-center container mx-auto lg:justify-between items-center p-3 text-white font-bold text-[14px] lg:text-[25px]">
+            <ul class="flex overflow-scroll-x overflow-auto gap-3  p-2 mr-8 max-md:text-[17px] font-bold text-[20px] uppercase" style="scrollbar-width: none;">
+                <li><a href="">kampaniyalar</a></li>
+                <li><a href="">papadias</a></li>
+                <li><a href="">pizza</a></li>
+                <li><a href="">qalyanaltilar</a></li>
+                <li><a href="">salat</a></li>
+                <li><a href="">pasta</a></li>
+                <li><a href="">souses</a></li>
+                <li><a href="">icki</a></li>
+                <li><a href="">desertler</a></li>                    
+            </ul>
+            <div class="hidden lg:block">
+                <a href="" class="flex items-center gap-2">
+                   <span>0 bal</span>
+                    <span class="px-3 text-[20px] rounded-[50%] font-extrabold bg-green-700">?</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <section class="mt-5 container mx-auto bg-[#f1f1f1] p-4">
+            <div class="flex items-center justify-between">
+
+                <div class="flex items-center justify-center gap-3">
+                    <h3 class="hidden lg:block font-bold text-[24px]">Promo kodunuz var?
+                    <span class="text-green-700">Endirimdən istifadə edin!</span> </h3>
+                </div>
+
+                <div class="flex gap-2 justify-center">
+                    <input type="text" placeholder="Promo kodunu daxil edin" class="border outline-none p-[5px] border-green-700 rounded-[8px]">
+                    <button class="w-[60px] bg-green-700 p-2 text-white uppercase font-bold rounded-[8px]">ok</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+                <div class="swiper mySwiper my-5 swiper-initialized swiper-horizontal swiper-backface-hidden">
+                    <div class="swiper-wrapper max-w-full min-h-full">
+                        <div class="swiper-slide"><img src="img/slider1.png" alt="slider1"></div>
+                        <div class="swiper-slide"><img src="img/slider2.png" alt="slider2"></div>
+                        <div class="swiper-slide"><img src="img/slider3.png" alt="slider3"></div>
+                        <div class="swiper-slide"><img src="img/slider4.png" alt="slider4"></div>
+                        <div class="swiper-slide"><img src="img/slider5.png" alt="slider5"></div>
+                        <div class="swiper-slide"><img src="img/slider6.png" alt="slider6"></div>
+                        <div class="swiper-slide"><img src="img/slider7.jpg" alt="slider7"></div>
+                        <div class="swiper-slide"><img src="img/slider8.png" alt="slider8"></div>
+                        <div class="swiper-slide"><img src="img/slider9.png" alt="slider9"></div>
+                        <div class="swiper-slide"><img src="img/slider10.jpg" alt="slider10"></div>
+                   </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="max-w-full bg-red-700 py-5 text-white font-bold">
+       <div class="flex container max-md:flex-col mx-auto items-center justify-between">
+        <div>
+            <span>&copy PJA 2024</span>
+        </div>
+            <ul class="flex items-center max-md:flex-col justify-between gap-6">
+                <li><a href="#">Haqqımızda</a></li>
+                <li><a href="#">Sual-Cavab</a></li>
+                <li><a href="#">Karyera</a></li>
+                <li><a href="#">Xəmir</a></li>
+                <li><a href="#">Papa Talk - Şərtlər və Qaydalar</a></li>
+            </ul>
+       </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swipper.js"></script>
+
+</body>
+</html>
