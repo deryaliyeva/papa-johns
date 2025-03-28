@@ -12,20 +12,16 @@ const swiper = new Swiper('.swiper', {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    const swiper = new Swiper(".swiper", {
-        loop: true,
+    var swiper = new Swiper(".mySwiper", {
         slidesPerView: 1,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
+        spaceBetween: 10,
         pagination: {
-            el: '.swiper-pagination',
+            el: ".swiper-pagination",
             clickable: true,
-            type: 'bullets',
-            bulletClass: 'swiper-pagination-bullet',
-            bulletActiveClass: 'swiper-pagination-bullet-active',
         },
-        autoplay: false,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
     });
 });
